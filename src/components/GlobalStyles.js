@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 /* My reset */
 :root {
   /* color-scheme: dark light; */
+  overflow-x: hidden;
 }
 
 /* Remove default margin */
@@ -56,7 +57,7 @@ body {
 /* A elements that don't have a class get default styles */
 a {
   text-decoration: none;
-
+  color: ${(props) => props.theme.light};
 }
 
 * .active-link {
