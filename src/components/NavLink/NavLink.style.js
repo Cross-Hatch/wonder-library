@@ -9,6 +9,6 @@ export const Container = styled.li`
   }
 
   .inactive-link {
-    color: ${(props) => props.theme.dark300};
+    color: ${(props) => `${props.theme.light}77`};
   }
 `;
