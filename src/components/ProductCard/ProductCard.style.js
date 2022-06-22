@@ -5,11 +5,11 @@ export const Container = styled.div`
   place-content: center;
   background-image: url(\"${(props) => props.image}\");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 105% 100%;
   background-position: center;
 
   position: relative;
-  border: 2px solid ${(props) => props.theme.dark300};
+  border: 3px solid ${(props) => props.theme.dark300};
   border-radius: 1.3ch;
   height: 18em;
   aspect-ratio: 1 / 1.41;
