@@ -9,7 +9,6 @@ const useProduct = ({limit = "", query = ""}) => {
     commerce.products
       .list({
         limit: limit,
-        query: query
       })
       .then((products) => {
         setProducts(products.data);
