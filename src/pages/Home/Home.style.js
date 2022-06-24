@@ -60,6 +60,7 @@ export const PreText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding:10em 0;
 
   h1 {
     font-size: 3rem;
@@ -68,8 +69,9 @@ export const PreText = styled.div`
   }
 
   p {
-    max-width: 72ch;
-    margin: 2em 0 0 0;
+    max-width: 60ch;
+    margin-top: 2em;
+    font-size:20pt;
   }
 `;
 export const Featured = styled.div`
