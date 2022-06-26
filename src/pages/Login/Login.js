@@ -6,18 +6,19 @@ import { useState } from "react";
 function Login() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = async (email) =>
-    commerce.customer
-      .login(`${email}`, "http://localhost:3000/login/callback")
-      .then((token) => {
-        console.log(token);
-      });
+  const handleSubmit = async (email) => email.preventDefault();
+  commerce.customer
+    .login(`${email}`, "http://localhost:3000/login/callback")
+    .then((token) => {
+      console.log(token);
+    });
 
   React.useEffect(() => {
     window.addEventListener("submit", (event) => {
       event.preventDefault();
       if (email && email.trim() !== "") {
         handleSubmit(email);
+      } else {
       }
     });
   }, []);
