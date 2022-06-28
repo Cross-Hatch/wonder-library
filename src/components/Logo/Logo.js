@@ -7,7 +7,7 @@ const Logo = ({ makeNameVisible, logoWidth, nameSize }) => {
       <LogoImg logoWidth={logoWidth} src={logo} alt="Wolib logo" />
       {makeNameVisible ? (
         <LogoNameContainer nameSize={nameSize} >
-              Wonder Libray <br />
+              Wonder Library <br />
               <span>Ministries</span>
         </LogoNameContainer>
       ) : null}
