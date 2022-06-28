@@ -36,7 +36,7 @@ function Login() {
       <Container>
         <Form onSubmit={handleSubmit}>
           <Legend>Login</Legend>
-          <p>You need only your email to login</p>
+          <p>You only need your email to login</p>
           <Input
             onKeyUp={(event) => getEmail(event)}
             placeholder="Email"
