@@ -11,7 +11,7 @@ const NavBar = () => {
         <NavList>
           <NavLink children={'home'} />
           <NavLink children={'store'} />
-          <NavLink children={'library'} />
+          <NavLink children={'login'} />
         </NavList>
       </div>
       <CartIcon cartImgWidth={2} />
