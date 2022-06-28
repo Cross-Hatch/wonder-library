@@ -1,15 +1,16 @@
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "./components/GlobalStyles";
-import { theme } from "./components/ThemeProvider";
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './components/GlobalStyles';
+import { theme } from './components/ThemeProvider';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
-} from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Store from "./pages/Store/Store";
-import Login from "./pages/Login/Login";
+} from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Store from './pages/Store/Store';
+import Login from './pages/Login/Login';
+import CallBack from './pages/Callback/Callback';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/login" element={<Login />} />
+          <Route path="login/callback/*" element={<CallBack />} />
         </Routes>
       </Router>
     </ThemeProvider>
