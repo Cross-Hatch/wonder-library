@@ -13,22 +13,24 @@ function Login() {
       console.log(token);
     });
 
-  React.useEffect(() => {
-    window.addEventListener("submit", (event) => {
-      event.preventDefault();
-      if (email && email.trim() !== "") {
-        handleSubmit(email);
-      } else {
+    function getEmail(e) {
+      if (e.key === 'Enter') {
+        setEmail(
+          () => e.target.value
+        )
+
+        if (email && email.trim() !== "") {
+            handleSubmit(email);
+          }
       }
-    });
-  }, []);
+    }
 
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
         <p>Login</p>
         <Input
-          onChange={(event) => setEmail(event.target.value)}
+          onKeyUp={(event) => getEmail(event)}
           placeholder="Enter your email"
           type={"email"}
         />
