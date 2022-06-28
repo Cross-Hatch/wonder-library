@@ -1,7 +1,15 @@
-import { Container, Form, Input } from "./Login.style";
+import {
+  Button,
+  Container,
+  Errortext,
+  Form,
+  Input,
+  Legend,
+} from "./Login.style";
 import commerce from "../../lib/commerce";
 import React from "react";
 import { useState } from "react";
+import Layout from "../../components/Layout/Layout";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -13,29 +21,32 @@ function Login() {
       console.log(token);
     });
 
-    function getEmail(e) {
-      if (e.key === 'Enter') {
-        setEmail(
-          () => e.target.value
-        )
+  function getEmail(e) {
+    if (e.key === "Enter") {
+      setEmail(() => e.target.value);
 
-        if (email && email.trim() !== "") {
-            handleSubmit(email);
-          }
+      if (email && email.trim() !== "") {
+        handleSubmit(email);
       }
     }
+  }
 
   return (
-    <Container>
-      <Form onSubmit={handleSubmit}>
-        <p>Login</p>
-        <Input
-          onKeyUp={(event) => getEmail(event)}
-          placeholder="Enter your email"
-          type={"email"}
-        />
-      </Form>
-    </Container>
+    <Layout>
+      <Container>
+        <Form onSubmit={handleSubmit}>
+          <Legend>Login</Legend>
+          <p>You need only your email to login</p>
+          <Input
+            onKeyUp={(event) => getEmail(event)}
+            placeholder="Email"
+            type={"email"}
+          />
+          <Button>Login</Button>
+          <Errortext>Error: try again</Errortext>
+        </Form>
+      </Container>
+    </Layout>
   );
 }
 
