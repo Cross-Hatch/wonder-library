@@ -11,6 +11,8 @@ import Home from './pages/Home/Home';
 import Store from './pages/Store/Store';
 import Login from './pages/Login/Login';
 import CallBack from './pages/Callback/Callback';
+import MyCart from './pages/MyCart/MyCart';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/login" element={<Login />} />
           <Route path="login/callback/*" element={<CallBack />} />
+          <Route path="mycart" element={<MyCart />} />
         </Routes>
       </Router>
     </ThemeProvider>

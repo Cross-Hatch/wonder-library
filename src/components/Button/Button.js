@@ -2,7 +2,7 @@ import { Container } from "./Button.style";
 
 const Button = ({btnName}) => {
     return ( 
-        <Container to="/store">
+        <Container to="">
             {btnName}
         </Container>
      );

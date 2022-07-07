@@ -14,6 +14,10 @@ export const Container = styled.nav`
   .logo-list {
     display: flex;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.5em 2.5em;
+  }
 `;
 
 export const NavList = styled.ul`
