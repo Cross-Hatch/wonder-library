@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 40vw;
@@ -21,6 +21,7 @@ export const Legend = styled.legend`
 export const Input = styled.input`
   background-color: transparent;
   border-radius: 50px;
+  padding: 0.5em 1em;
   display: block;
   color: #fff;
   margin: 2em;
