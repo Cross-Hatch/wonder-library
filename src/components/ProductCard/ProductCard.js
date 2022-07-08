@@ -20,7 +20,7 @@ const Product = ({ product }) => {
           {description}
         </ProductDescription>
       </ProductOverlay>
-      <ProductCartIcon color={'#111'} />
+      <ProductCartIcon color={'#111'} id={product.id} />
     </Container>
   );
 };
