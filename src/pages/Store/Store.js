@@ -7,7 +7,7 @@ import {
 } from './Store.style'
 
 const Store = () => {
-  const {products} = useProduct({ limit: 8 });
+  const {products} = useProduct({ limit: 7 });
 
   return (
    <Layout> 
