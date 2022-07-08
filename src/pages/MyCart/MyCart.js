@@ -5,6 +5,11 @@ import useProduct from '../../hooks/useProduct';
 import SplashScreen from '../../components/SplashScreen/SplashScreen';
 import commerce from '../../lib/commerce';
 import { useEffect, useState } from 'react';
+import { Button } from '../Login/Login.style';
+import {BrowserRouter as Router,
+  Routes,
+  Route 
+} from 'react-router-dom';
 
 const MyCart = () => {
   const [loading, setLoading] = useState(true);
@@ -28,6 +33,7 @@ const MyCart = () => {
         {cartItems.map((cartItem) => (
           <CartItem key={cartItem.id} product={cartItem} />
         ))}
+          <Button to="/payment">Checkout</Button>
       </Wrapper>
     </Layout>
   );
