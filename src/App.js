@@ -12,6 +12,7 @@ import Store from './pages/Store/Store';
 import Login from './pages/Login/Login';
 import CallBack from './pages/Callback/Callback';
 import MyCart from './pages/MyCart/MyCart';
+import Payment from './pages/Payment/Payment';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           </Route>
           <Route path="login/callback/*" element={<CallBack />} />
           <Route path="mycart" element={<MyCart />} />
+          <Route path="payment" element={<Payment/>} />
         </Routes>
       </Router>
     </ThemeProvider>
