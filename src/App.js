@@ -23,7 +23,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/store" element={<Store />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login />}>
+            <Route path="error/:email_auth" element={<Login />} />
+          </Route>
           <Route path="login/callback/*" element={<CallBack />} />
           <Route path="mycart" element={<MyCart />} />
         </Routes>
