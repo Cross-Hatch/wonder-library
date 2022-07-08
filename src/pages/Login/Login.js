@@ -14,6 +14,7 @@ import { useParams } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
+  const [host, setHost] = useState("");
   let params = useParams()
 
   // const handleSubmit = (email) => email.preventDefault();
@@ -23,8 +24,10 @@ function Login() {
   };
 
   const handleSubmit = (e) => {
+  setHost(document.location.origin)
+  console.log(host);
   commerce.customer
-    .login(`${e}`, "http://localhost:3000/login/callback")
+    .login(`${e}`, `${host}/login/callback`)
     .then((token) => {
       console.log(token);
     });
