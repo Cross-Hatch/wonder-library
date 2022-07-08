@@ -5,7 +5,7 @@ import SplashScreen from '../../components/SplashScreen/SplashScreen';
 import { Wrapper} from './Store.style';
 
 const Store = () => {
-  const { loading, products } = useProduct({ limit: 6});
+  const { loading, products } = useProduct({ limit:"50 "});
 
   if (loading) {
     return (
