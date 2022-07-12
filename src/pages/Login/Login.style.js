@@ -31,7 +31,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.button`
   width: 6em;
   border-radius: 0.4em;
   background-color: red;
