@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -8,4 +9,14 @@ export const Wrapper = styled.div`
   & > h2 {
     margin: 1.5em 0;
   }
+`;
+
+export const Button = styled(Link)`
+  width: 6em;
+  border-radius: 0.4em;
+  background-color: red;
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  cursor: pointer;
 `;
