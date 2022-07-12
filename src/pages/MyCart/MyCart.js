@@ -1,11 +1,10 @@
 import Layout from '../../components/Layout/Layout';
-import { Wrapper } from './MyCart.style';
+import { Wrapper, Button } from './MyCart.style';
 import CartItem from '../../components/CartItem/CartItem';
 import useProduct from '../../hooks/useProduct';
 import SplashScreen from '../../components/SplashScreen/SplashScreen';
 import commerce from '../../lib/commerce';
 import { useEffect, useState } from 'react';
-import { Button } from '../Login/Login.style';
 import {BrowserRouter as Router,
   Routes,
   Route 
