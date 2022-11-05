@@ -48,3 +48,15 @@ export const Description = styled.div`
     font-size: 0.8em;
   }
 `;
+
+export const Button = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => props.theme.red};
+  width: max-content;
+  padding: 0.9ch 1.5ch;
+  border-radius: 1ch;
+  font-weight: 800;
+  text-transform: capitalize;
+`;

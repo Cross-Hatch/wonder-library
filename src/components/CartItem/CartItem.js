@@ -15,6 +15,10 @@ const CartItem = ({ product: cartItem }) => {
     });
   }, [cartItem.product_id]);
 
+  // function removeFromCart() {
+  //   commerce.cart.remove('item_7RyWOwmK5nEa2V').then((response) => console.log(response));
+  // }
+
   return (
     <Container>
       <Wrapper>
